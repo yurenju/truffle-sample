@@ -23,8 +23,9 @@
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
-const HDWalletProvider = require("@truffle/hdwallet-provider");
+require("ts-node/register");
 require("dotenv").config();
+const HDWalletProvider = require("@truffle/hdwallet-provider");
 
 module.exports = {
   /**
@@ -36,7 +37,7 @@ module.exports = {
    *
    * $ truffle test --network <network-name>
    */
-
+  test_file_extension_regexp: /.*\.ts$/,
   networks: {
     // Useful for testing. The `development` name is special - truffle uses it by default
     // if it's defined here and no other network is specified at the command line.

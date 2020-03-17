@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "truffle test",
+    "build": "ts-node script/build.ts",
     "deploy:ropsten": "truffle migrate --network ropsten"
   },
   "keywords": [],
@@ -16,11 +17,14 @@
   "dependencies": {
     "@openzeppelin/contracts": "2.5.0",
     "@truffle/hdwallet-provider": "1.0.33",
+    "@types/shelljs": "0.8.6",
     "dotenv": "8.2.0",
     "shelljs": "0.8.3",
     "truffle": "5.1.17",
+    "truffle-typings": "1.0.8",
     "ts-node": "8.6.2",
     "typechain": "1.0.5",
+    "typechain-target-truffle": "1.0.2",
     "typescript": "3.8.3"
   }
 }
